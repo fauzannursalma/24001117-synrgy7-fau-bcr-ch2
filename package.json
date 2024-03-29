@@ -1,9 +1,12 @@
 {
+  "homepage": "https://fauzannursalma.github.io/24001117-synrgy7-fau-bcr-ch2/",
   "name": "24001117-synrgy7-fau-bcr-ch2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css --watch"
   },
@@ -11,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "tailwindcss": "^3.4.1"
   },
   "dependencies": {
